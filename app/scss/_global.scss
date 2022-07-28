@@ -11,3 +11,12 @@ body{
   margin: 0 auto;
   padding: 0 15px;
 }
+
+.btn{
+  display: inline-block;
+  padding: 20px 32px;
+  text-transform: uppercase;
+  background-color: $accent;
+  border-radius: 20px;
+  cursor: pointer;
+}

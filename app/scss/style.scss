@@ -2,6 +2,104 @@
 @import 'fonts';
 @import 'reset';
 @import 'global';
+@import 'libs';
+
+.header {
+  padding: 30px 0;
+  background: $default;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.menu{
+  &__list{
+    display: flex;
+  }
+  &__list-item+.menu__list-item{
+    padding-left: 56px;
+  }
+  &__list-link{
+    @extend %montserrat-400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #fff;
+    transition: all .3s;
+    border-bottom: 1px solid transparent;
+    padding: 4px 2px;
+    &:hover{
+      color: $accent;
+      border-bottom: 1px solid $accent;
+    }
+  }
+  &__list-link--active{
+    color: $accent;
+    border-bottom: 1px solid $accent;
+  }
+}
+
+.top{
+  padding: 60px 0 137px;
+  background-image: url('../images/top-bg.jpg');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  &__inner-content{
+    max-width: 420px;
+  }
+  &__inner-title{
+    @extend %montserrat-600;
+    font-size: 96px;
+    line-height: 117px;
+  }
+  &__inner-text{
+    margin-top: 42px;
+    @extend %montserrat-500;
+  }
+  &__inner-btn{
+    margin-top: 61px;
+  }
+}
+
+.top-slider__inner{
+  max-width: 415px;
+  .slick-dots{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  }
+  .slick-dots button{
+  background-color: transparent;
+  width: 25px;
+  height: 25px;
+  font-size: 0;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  border: 2px solid transparent;
+  }
+  .slick-dots li + li{
+  margin-top: 20px;
+  }
+  // .slick-active button{
+
+  // }
+  .slick-prev{
+  font-size: 0;
+  background-image: url('../images/topslider/arrow-left.svg')
+  }
+}
+
+
+
+
 
 
 
