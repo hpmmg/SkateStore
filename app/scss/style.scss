@@ -5,6 +5,10 @@
 @import 'libs';
 
 .header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
   padding: 30px 0;
   background: $default;
   &__inner{
@@ -41,7 +45,9 @@
 }
 
 .top{
-  padding: 60px 0 137px;
+  margin-top: 89px;
+  min-height: calc(100vh - 89px);
+  padding-top: 60px;
   background-image: url('../images/top-bg.jpg');
   background-position: bottom;
   background-repeat: no-repeat;
@@ -70,6 +76,18 @@
 
 .top-slider{
   margin-top: 70px;
+  &__item{
+    border-radius: 22px;
+  }
+  &__inner{
+    position: relative;
+    &::before{
+      content: url('../images/topslider/slidertitle.png');
+      position: absolute;
+      z-index: 1;
+      transform: translateY(-33%);
+    }
+  }
 }
 .slick-list{
   max-width: 415px;
