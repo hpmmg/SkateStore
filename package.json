@@ -9,8 +9,10 @@
   "author": "Annenkov Daniil",
   "license": "ISC",
   "devDependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
     "browser-sync": "^2.27.5",
     "del": "^6.0.0",
+    "fancybox": "^3.0.1",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-concat": "^2.6.1",
@@ -20,5 +22,8 @@
     "jquery": "^3.6.0",
     "sass": "^1.42.1",
     "slick-carousel": "^1.8.1"
+  },
+  "dependencies": {
+    "@fancyapps/ui": "^4.0.31"
   }
 }
