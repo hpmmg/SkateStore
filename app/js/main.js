@@ -10,5 +10,28 @@ $(function () {
   });
 
 
+  $('.videos__slider').slick({
+    dots: false,
+    arrows: true,
+    // fade: true,
+    autoplay: false,
+    prevArrow: '<button type="button" class="slick-prev"><img src="images/videos/arrow-prev.png" alt=""></button>',
+    
+  });
+  $('.menu__list-link').on('click', function () {
+    $('.menu__list-link').removeClass('menu__list-link--active')
+  });
+  $('.menu__list-link').on('click', function () {
+    $(this).addClass('menu__list-link--active')
+  });
+
+  var swiper = new Swiper(".blog__slider", {
+    
+    slidesPerView: 2,
+    spaceBetween: 99,
+    centeredSlides: true,
+  
+  });
+  
   
 })
