@@ -439,6 +439,37 @@
   }
 }
 
+.signup{
+  padding: 55px 0;
+  background: #efefef;
+  &__form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @extend %montserrat-600;
+  }
+  &__email{
+    padding: 29px 266px 29px 49px;
+    font-size: 24px;
+    line-height: 24px;
+    background: #DDDDDD;
+    border: 3px solid #030303;  
+    border-bottom-left-radius:  16px;
+    border-top-left-radius: 16px;
+    &::placeholder{
+      color: rgba(0, 0, 0, 0.3);
+    }
+  }
+  &__btn{
+    padding: 30px 14px;
+    color: #fff;
+    background-color: $default;
+    cursor: pointer;
+    border-bottom-right-radius: 16px;
+    border-top-right-radius: 16px;
+  }
+}
+
 
 
 
