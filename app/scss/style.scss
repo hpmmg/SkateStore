@@ -302,12 +302,12 @@
     }
     .slick-prev{
       font-size: 0;
-      transform: translate(-75px,-113px);
+      transform: translate(-75px,-125px);
     }
     .slick-next{
       font-size: 18px;
       line-height: 22px;
-      transform: translate(-15px, -105px);
+      transform: translate(-15px, -118px);
     }
   }
   &__slider-item{
@@ -470,6 +470,102 @@
   }
 }
 
+.footer{
+  padding: 89px 0 77px;
+  background-image: url('../images/footer-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+  }
+  &__item-link{
+    color: #fff;
+    @extend %montserrat-500;
+    transition: all .3s;
+    border-bottom: 1px solid transparent;
+    &:hover{
+      border-bottom:2px solid #fff;
+    }
+  }
+  &__item + .footer__item{
+    margin-top: 9px;
+  }
+  &__top-link{
+    margin-top: 32px;
+    color: #fff; 
+    font-size: 22px;
+    line-height: 27px;
+    @extend %montserrat-300;
+    display: flex;
+    align-items: center;
+    
+  }
+  &__top-link-img{
+    display: inline-block;
+  }
+  &__top-link-text{
+    margin-left: 10px;
+  }
+  &__form-label{
+    color: #fff;
+    @extend %montserratAl-500;
+    display: block;
+  }
+  &__form-wrapper{
+    margin-top: 9px;
+    display: flex;
+  }
+  &__form-input{
+    padding: 19px 32px 19px 21px;
+    border: none;
+    &::placeholder{
+      @extend %montserrat-500;
+      color: #C9C9C9;
+    }
+  }
+  &__form-btn{
+    margin-left: 20px;
+    background: transparent;
+    color: #fff;
+    padding: 22px 9px;
+    font-size: 20px;
+    line-height: 24px;
+    @extend %montserrat-500;
+    border-top: 1px solid #fff;
+    border-right: 1px solid #fff;
+    cursor: pointer;
+  }
+  &__socials{
+    display: flex;
+    align-items: center;
+    margin-top: 28px;
+  }
+  &__socials-list{
+    display: flex;
+    align-items: center;
+  }
+  &__socials-link{
+    &:hover{
+      svg{
+        path{
+          fill: $accent;
+        }
+      }
+    }
+  }
+  &__socials-text{
+    color: #fff;
+    font-size: 18px;
+    line-height: 22px;
+    @extend %montserrat-300;
+    margin-left: 50px;
+  }
+  &__socials-items +.footer__socials-items{
+    margin-left: 21px;
+  }
+}
 
 
 
