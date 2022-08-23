@@ -20,6 +20,9 @@
 }
 
 .menu {
+  &__btn{
+    display: none;
+  }
   &__list {
     display: flex;
   }
@@ -133,7 +136,7 @@
 
     &::before {
       content: '';
-      width: 11px;
+      width: 9px;
       height: 9px;
       background-color: $default;
       top: 50%;
